@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f5f3;
+  --foreground: #111827;
+  --muted: #5b6574;
+  --card: #ffffff;
+  --border: rgba(15, 23, 42, 0.12);
+  --accent: #b8771a;
+  --accent-soft: #f1e7d8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page-transition {
+  animation: fadeIn 0.12s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-semibold tracking-[-0.04em] text-slate-900;
+  }
+
+  p {
+    @apply text-slate-700;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-shell {
+    @apply py-20 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.05em] leading-tight text-slate-900;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-8 bg-accent;
+  }
+
+  .card-surface {
+    @apply bg-white border border-slate-200/80 shadow-soft;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
