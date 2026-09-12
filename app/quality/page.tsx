@@ -35,7 +35,7 @@ export default function QualityPage() {
             Quality, accuracy and inspection
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            Varad Engineering's quality policy covers materials, workmanship, accuracies, timeline and service, with continual improvement through a quality system directed by a strong management team.
+            Varad Engineering&apos;s quality policy covers materials, workmanship, accuracies, timeline and service, with continual improvement through a quality system directed by a strong management team.
           </p>
         </div>
 
