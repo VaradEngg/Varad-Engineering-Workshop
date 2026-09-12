@@ -86,14 +86,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 pt-3 border-t border-slate-100">
-                <ShieldCheck className="h-5 w-5 text-amber-600 mt-1 shrink-0" />
-                <div>
-                  <div className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Sister Concern</div>
-                  <div className="text-sm font-semibold text-slate-800">{company.sisterConcern.name}</div>
-                  <div className="text-xs leading-5 text-slate-500">{company.sisterConcern.description}</div>
-                </div>
-              </div>
             </div>
           </div>
 

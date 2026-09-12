@@ -24,7 +24,7 @@ const reasons = [
   {
     title: "Dedicated Team",
     description:
-      "A team of 11 personnel, including 7 on the shop floor, 2 in marketing and sales, and 2 in the back office.",
+      "A team of 11 professionals, including 7 on the shop floor, 2 in marketing and sales, and 2 in the back office.",
     icon: MessageSquareText,
   },
 ];

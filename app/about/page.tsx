@@ -43,32 +43,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Sister Concern Banner */}
-        <div className="mt-10 rounded-2xl border border-amber-300 bg-amber-50/60 p-6 md:p-8 shadow-xs">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div>
-              <span className="inline-flex items-center gap-2 rounded bg-amber-200/80 px-3 py-1 text-xs font-semibold text-amber-900 uppercase tracking-wider">
-                <Award className="h-3.5 w-3.5 text-amber-800" /> Sister Concern Partnership
-              </span>
-              <h3 className="mt-3 text-2xl font-bold text-slate-900">
-                {company.sisterConcern.name} (Est. {company.sisterConcern.incorporatedYear})
-              </h3>
-              <p className="mt-2 text-sm text-slate-700 max-w-3xl leading-relaxed">
-                {company.sisterConcern.description}
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {company.sisterConcern.services.map((service) => (
-                  <span key={service} className="inline-block rounded bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-900 border border-amber-300/50">
-                    {service}
-                  </span>
-                ))}
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
         {/* Vision & Mission Grid */}
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
           <article className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-between">
